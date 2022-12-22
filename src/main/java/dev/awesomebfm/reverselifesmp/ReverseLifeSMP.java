@@ -26,8 +26,15 @@ public final class ReverseLifeSMP extends JavaPlugin {
         plugin = this;
         locked = false;
 
-        getConfig().options().copyDefaults();
         saveDefaultConfig();
+
+        /*String host = getConfig().getString("database.host");
+        String port = getConfig().getString("database.port");
+        String username = getConfig().getString("database.username");
+        String password = getConfig().getString("database.password");
+        String db = getConfig().getString("database.database");
+        System.out.println(host + " " + port + " " + username + " " + password + " " + db);
+        database = new Database(host, port, username, password, db); */
 
         // Create database
         database = new Database(
@@ -58,6 +65,7 @@ public final class ReverseLifeSMP extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new RespawnListener(), this);
         getServer().getPluginManager().registerEvents(new LoginListener(), this);
         getServer().getPluginManager().registerEvents(new CustomItemManager(), this);
+        getServer().getPluginManager().registerEvents(new ItemCraftListener(), this);
 
         // Register Commands
         getCommand("hearts").setExecutor(new HeartsCommand());

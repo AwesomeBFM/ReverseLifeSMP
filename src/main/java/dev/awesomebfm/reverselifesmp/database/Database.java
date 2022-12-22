@@ -28,7 +28,7 @@ public class Database {
     public void connect() {
         if (connection == null) {
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://" + url + ":" + port + "/" + database, username, password);
+                connection = DriverManager.getConnection("jdbc:mysql://" + url + ":" + port + "/" + database + "?autoreconnect=true", username, password);
             } catch (SQLException e) {
                 System.out.println("Kick and shout!");
                 e.printStackTrace();
@@ -127,10 +127,4 @@ public class Database {
         ps.close();
         return deadPlayers;
     }
-
-    /*public void purgeData() throws SQLException {
-        PreparedStatement ps = connection.prepareStatement("DROP TABLE rlsmp_data");
-        ps.executeUpdate();
-        ps.close();
-    } */
 }

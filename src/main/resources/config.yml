@@ -1,6 +1,6 @@
 # Please fill in with your own data, please do not include port or database name in the url, if there is no password leave it blank.
 database:
-  url: "https://localhost"
+  host: "localhost"
   port: "3306"
   username: "admin"
   password: "password"
