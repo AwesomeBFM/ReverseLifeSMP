@@ -11,27 +11,21 @@ commands:
   clearhearts:
     description: Clears a player's hearts
     usage: /clearhearts
-    permission: reverselifesmp.clearhearts
+    permission: reverselifesmp.admin
   resetdata:
     description: Resets the SMP data
     usage: /resetdata
-    permission: reverselifesmp.resetdata
+    permission: reverselifesmp.admin
   undeathban:
     description: Un-death ban a player
     usage: /undeathban <player>
-    permission: reverselifesmp.deathban
+    permission: reverselifesmp.admin
   deathban:
     description: death ban a player
     usage: /deathban <player>
-    permission: reverselifesmp.deathban
+    permission: reverselifesmp.admin
 permissions:
-    reverselifesmp.clearhearts:
-        description: Allows a player to clear their hearts
-        default: op
-    reverselifesmp.resetdata:
-        description: Allows a player to reset the SMP data
-        default: op
-    reverselifesmp.deathban:
-        description: Allows a player to un-death ban a player
+    reverselifesmp.admin:
+        description: Allows access to all ReverseLifeSMP commands
         default: op
 
