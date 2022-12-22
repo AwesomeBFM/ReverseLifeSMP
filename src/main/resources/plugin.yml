@@ -1,0 +1,37 @@
+name: ReverseLifeSMP
+version: '${project.version}'
+main: dev.awesomebfm.reverselifesmp.ReverseLifeSMP
+api-version: 1.19
+authors: [ AwesomeBFM ]
+description: Survival Minecraft Plugin for the Reverse Life SMP
+commands:
+  hearts:
+    description: Shows the amount of hearts you have
+    usage: /hearts
+  clearhearts:
+    description: Clears a player's hearts
+    usage: /clearhearts
+    permission: reverselifesmp.clearhearts
+  resetdata:
+    description: Resets the SMP data
+    usage: /resetdata
+    permission: reverselifesmp.resetdata
+  undeathban:
+    description: Un-death ban a player
+    usage: /undeathban <player>
+    permission: reverselifesmp.deathban
+  deathban:
+    description: death ban a player
+    usage: /deathban <player>
+    permission: reverselifesmp.deathban
+permissions:
+    reverselifesmp.clearhearts:
+        description: Allows a player to clear their hearts
+        default: op
+    reverselifesmp.resetdata:
+        description: Allows a player to reset the SMP data
+        default: op
+    reverselifesmp.deathban:
+        description: Allows a player to un-death ban a player
+        default: op
+
