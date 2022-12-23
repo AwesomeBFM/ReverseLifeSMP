@@ -25,7 +25,10 @@ commands:
     usage: /deathban <player>
     permission: reverselifesmp.admin
 permissions:
-    reverselifesmp.admin:
+    rlsmp.admin:
         description: Allows access to all ReverseLifeSMP commands
         default: op
+    rlsmp.default:
+        description: Allows access to all ReverseLifeSMP commands
+        default: true
 

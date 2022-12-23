@@ -35,6 +35,7 @@ public class DeathBanCommand implements CommandExecutor {
             if (plugin.containsPlayer(uuid)) {
                 Bukkit.getPlayer(uuid).kickPlayer(ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +
                         ChatColor.RED + "You have gained too many hearts and have been death banned! See you next season!");
+                Bukkit.broadcast(ChatColor.RED + "Player " + name + " has been death banned for gaining too many hearts!", "rlsmp.default");
             }
         } catch (SQLException e) {
             sender.sendMessage(ChatColor.RED + "ERROR: Could not unban player.");

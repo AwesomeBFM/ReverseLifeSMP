@@ -25,6 +25,10 @@ The server has a small amount of custom commands to allow users to interact with
 ### Permissions
 - `rlsmp.admin` - Allows access to the admin commands
 
+### Custom Items
+- https://cdn.discordapp.com/attachments/1015477579991486504/1021905337416175626/unknown.png - Revive Stone - Opens a GUI to revive a death banned player
+- https://cdn.discordapp.com/attachments/1015477579991486504/1021905435130871808/unknown.png - Heart Magnet - Removes one of your extra hearts
+
 ### Setup
 After adding the plugin to your plugins' folder, start the server and wait until you see
 read error messages. After these present themselves, stop the server and then click on the

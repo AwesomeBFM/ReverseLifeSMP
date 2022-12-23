@@ -28,6 +28,7 @@ public class DeathListener implements Listener {
                 //e.getEntity().getInventory().clear(); // Prevents a weird bug
                 //e.getEntity().kickPlayer(ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +
                 //        ChatColor.RED + "You have gained too many hearts and have been death banned! See you next season!");
+                Bukkit.broadcast(ChatColor.RED + "Player " + e.getEntity().getName() + " has been death banned for gaining too many hearts!", "rlsmp.default");
             } catch (SQLException ex) {
                 e.getEntity().kickPlayer(ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +
                         ChatColor.RED + "0x0003 An error occurred in your connection. Please reconnect. If the issue persists please contact an administrator.");

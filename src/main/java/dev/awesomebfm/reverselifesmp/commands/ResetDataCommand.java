@@ -31,6 +31,7 @@ public class ResetDataCommand implements CommandExecutor {
         plugin.setLocked(true);
         try {
             plugin.getDatabase().purge();
+            sender.sendMessage(ChatColor.GREEN + "Successfully reset all plugin data! Please restart the server.");
         } catch (SQLException e) {
             sender.sendMessage(ChatColor.RED + "ERROR: Failed to purge data from the database. Please run the command again.");
             throw new RuntimeException(e);
