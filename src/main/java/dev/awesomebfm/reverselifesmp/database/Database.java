@@ -28,7 +28,7 @@ public class Database {
     public void connect() {
         if (connection == null) {
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://" + url + ":" + port + "/" + database + "?autoreconnect=true", username, password);
+                connection = DriverManager.getConnection("jdbc:mysql://" + url + ":" + port + "/" + database + "?autoReconnect=true&cmaxReconnects=5", username, password);
             } catch (SQLException e) {
                 System.out.println("Kick and shout!");
                 e.printStackTrace();
