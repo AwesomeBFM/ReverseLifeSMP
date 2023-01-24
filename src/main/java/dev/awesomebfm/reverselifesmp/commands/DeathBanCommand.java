@@ -12,6 +12,14 @@ import org.bukkit.event.player.PlayerLoginEvent;
 import java.sql.SQLException;
 import java.util.UUID;
 
+/*
+ * Death Ban Command
+ * AwesomeBFM
+ * 1/1/2023
+ * Purpose:
+ *      Allows an admin to death ban a player
+ */
+
 public class DeathBanCommand implements CommandExecutor {
     private final ReverseLifeSMP plugin = ReverseLifeSMP.getPlugin();
     @Override

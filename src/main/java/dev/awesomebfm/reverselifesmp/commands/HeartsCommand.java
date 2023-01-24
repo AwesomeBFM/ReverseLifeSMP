@@ -7,6 +7,14 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+/*
+ * Hearts Command
+ * AwesomeBFM
+ * 1/1/2023
+ * Purpose:
+ *      Allows a player to view their own hearts.
+ */
+
 public class HeartsCommand implements CommandExecutor {
     private final ReverseLifeSMP plugin = ReverseLifeSMP.getPlugin();
 

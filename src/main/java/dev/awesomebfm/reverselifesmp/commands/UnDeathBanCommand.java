@@ -12,6 +12,13 @@ import org.bukkit.command.CommandSender;
 import java.sql.SQLException;
 import java.util.UUID;
 
+/*
+ * Un Death Ban Command
+ * AwesomeBFM
+ * 1/1/2023
+ * Purpose:
+ *      Allows an admin to remove a player's death ban.
+ */
 
 public class UnDeathBanCommand implements CommandExecutor {
     private final ReverseLifeSMP plugin = ReverseLifeSMP.getPlugin();

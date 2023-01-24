@@ -25,9 +25,7 @@ public class DeathListener implements Listener {
             Bukkit.getServer().broadcastMessage(ChatColor.GREEN + e.getEntity().getName() + ChatColor.RED + " gained too many hearts and has been death banned!");
             try {
                 plugin.getDatabase().updateData(new PlayerData(e.getEntity().getUniqueId(), hearts, true));
-                //e.getEntity().getInventory().clear(); // Prevents a weird bug
-                //e.getEntity().kickPlayer(ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +
-                //        ChatColor.RED + "You have gained too many hearts and have been death banned! See you next season!");
+                plugin.getDatabase().addDeathBan(e.getEntity().getUniqueId(), e.getEntity().getName());
                 Bukkit.broadcast(ChatColor.RED + "Player " + e.getEntity().getName() + " has been death banned for gaining too many hearts!", "rlsmp.default");
             } catch (SQLException ex) {
                 e.getEntity().kickPlayer(ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +

@@ -10,6 +10,14 @@ import org.bukkit.entity.Player;
 
 import java.sql.SQLException;
 
+/*
+ * Reset Data Command
+ * AwesomeBFM
+ * 1/1/2023
+ * Purpose:
+ *      Allows the console to reset all server data.
+ */
+
 public class ResetDataCommand implements CommandExecutor {
     private final ReverseLifeSMP plugin = ReverseLifeSMP.getPlugin();
     @Override

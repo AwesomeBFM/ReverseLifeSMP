@@ -30,14 +30,14 @@ public class LoginListener implements Listener {
                 plugin.getDatabase().createData(data);
             }
 
-            // Check if the player is deathbanned and kick them if they are
+            // Check if the player is death banned and kick them if they are
             if (data.isDeathBanned()) {
                 e.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.translateAlternateColorCodes('&', "&4&lReverse &c&lLife &a&lSMP") + "\n" +
                         ChatColor.RED + "You have gained too many hearts and have been death banned! See you next season!");
                 return;
             }
 
-            // Check to see if they should be deathbanned
+            // Check to see if they should be death banned
             if (data.getHearts() == 10) {
                 data.setDeathBanned(true);
                 plugin.getDatabase().updateData(data);
