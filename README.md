@@ -2,6 +2,8 @@
 
 Survival Minecraft Plugin for the Reverse Life SMP
 
+**Ownership of the server and the plugin has been transfered over to Andrims. This repository may be deleted at any time**
+
 ### Introduction
 Please keep in mind that this plugin has been designed for the Reverse Life SMP, while
 it has been made available, no support will be provided here. The plugin has been designed
